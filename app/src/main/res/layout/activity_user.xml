@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="alarmgps.alarmgps.User">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <Button
+            android:id="@+id/ubicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ubicarvehiculo"
+            android:text="Ubicar" />
+
+        <Button
+            android:id="@+id/limpiarregistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="limpiarregistro"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/apagarmotor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="apagarmotor"
+            android:text="ApagarM" />
+
+        <Button
+            android:id="@+id/encendermotor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="encendermotor"
+            android:text="EncernderM" />
+
+        <Button
+            android:id="@+id/activaralarma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="activaralarma"
+            android:text="ActivarAlarma" />
+
+        <Button
+            android:id="@+id/desactivaralarma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="desactivaralarma"
+            android:text="DesactivarAlamar" />
+
+        <Button
+            android:id="@+id/micon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="micon"
+            android:text="Mic ON" />
+
+        <Button
+            android:id="@+id/micoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="micoff"
+            android:text="Mic off" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="58dp" />
+</android.support.constraint.ConstraintLayout>
